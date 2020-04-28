@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "qa-challenge"
+version = "0.1.0"
+description = ""
+authors = ["Valerii Shevchenko <vshevchenk@softserveinc.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+selene = "^1.0.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4.1"
+flake8 = "^3.7.9"
+webdriver_manager = "^2.4.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
