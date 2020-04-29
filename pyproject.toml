@@ -7,6 +7,7 @@ authors = ["Valerii Shevchenko <vshevchenk@softserveinc.com>"]
 [tool.poetry.dependencies]
 python = "^3.6"
 selene = "^1.0.2"
+PyYAML = "^5.3.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4.1"
