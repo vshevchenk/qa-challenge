@@ -8,7 +8,7 @@
 Use your email and password
 
 ## Run tests:
-`poetry tun pytest` at project root
+`poetry run pytest` at project root
 
 ## Check code-style
 `Poetry run flake8` at project root
