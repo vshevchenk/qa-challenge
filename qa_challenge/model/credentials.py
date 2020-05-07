@@ -2,6 +2,6 @@ from attr import dataclass
 
 
 @dataclass
-class Credentials():
+class Credentials:
     email: str
     password: str

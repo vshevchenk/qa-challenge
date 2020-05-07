@@ -16,7 +16,7 @@ class BaseLoggedInPage(BasePage):
     def open(self, email: Optional[str] = None, password: Optional[str] = None):
         if self.get_current_url() != self.url:
             super().open()
-        if (email is not None and password is not None):
+        if email is not None and password is not None:
             try:
                 self.header_menu.account_dropdown.is_displayed()
             except (NoSuchElementException, TimeoutException):

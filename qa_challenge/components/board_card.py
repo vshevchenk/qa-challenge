@@ -3,14 +3,16 @@ from selene.support import by
 from selene.support.conditions import be
 
 
-class BoardCard():
+class BoardCard:
 
     def __init__(self, element: SeleneElement):
         self.element = element
         self.title = element.s(by.css("h6"))
         self.description = element.s(by.css("div.card-body p"))
-        self.like_button = element.s(by.xpath(".//button[*[name()='svg' and contains(@class,'fa-thumbs-up')]]"))
-        self.delete_button = element.s(by.xpath(".//button[*[name()='svg' and contains(@class,'fa-times-circle')]]"))
+        self.like_button = \
+            element.s(by.xpath(".//button[*[name()='svg' and contains(@class,'fa-thumbs-up')]]"))
+        self.delete_button = \
+            element.s(by.xpath(".//button[*[name()='svg' and contains(@class,'fa-times-circle')]]"))
         self.loading_circle = element.s(by.css("svg.fa-circle-notch"))
 
     def get_title_text(self):

@@ -12,8 +12,10 @@ class BasePage(ABC):
         open_url(self.url)
         return self
 
-    def get_tab_title(self):
+    @staticmethod
+    def get_tab_title():
         return title()
 
-    def get_current_url(self):
+    @staticmethod
+    def get_current_url():
         return driver().current_url
