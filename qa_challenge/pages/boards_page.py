@@ -34,7 +34,7 @@ class BoardsPage(BaseLoggedInPage):
         self.add_card_button.click()
 
     def get_last_green_card(self):
-        return BoardCard(self.green_cards.__getitem__(len(self.green_cards) - 1))
+        return BoardCard(self.green_cards[-1])
 
     def get_last_red_card(self):
-        return BoardCard(self.red_cards.__getitem__(len(self.red_cards) - 1))
+        return BoardCard(self.red_cards[-1])
