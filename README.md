@@ -3,10 +3,13 @@
 ## Prerequisites
 - Python 3.6^ is installed
 - [Poetry](https://python-poetry.org/) is installed
-- create `credentials.yml` file at project root based on [credentials.yaml.template]
+- create `credentials.yaml` file at project root based on [credentials.yaml.template]
 (credentials.yaml.template)
 
 Use your email and password
+
+## Install dependencies
+`poetry install` at project root
 
 ## Run tests:
 `poetry run pytest` at project root
